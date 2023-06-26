@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+.col-md-6 {
+      background-color: white;
+      border-radius: 10px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 40px;
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.20);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-control:invalid {
+      border-color: red;
+    }
+        
+        h1 {
+            text-align: center;
+            color: blue;
+            margin-top: -100px;
+        }
+        
+        .great img {
+            border-image-width: 900px;
+            border: 0;
+            margin-bottom: 100px;
+            padding-bottom: 0px;
+            padding-left: 500px;
+            /* padding-right: 200px; */
+            align-items: center;
+        }
+        
+        h2 {
+            height: -106px;
+            color: blue;
+            text-align: left;
+            font: 1em sans-serif;
+            margin-top: 0px;
+            padding-top: 0px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h4 .modal-header{
+            align-items: center;
+            text-align: center;
+        }
+        .proceed {
+            text-align:center;
+            align-items: center;
+        }
+        /* Full-width input fields */
+input[type=text],input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #071aaa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  right: auto;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+a.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position:absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="container col-md-6">
+        <hr>
+       
+    <div class="great">
+        <img src="images/Officialphlogo.png" alt="Joshuagreat" width="500px">
+        <h1 text-align="center">PATHWAY TO HEAVEN</h1>
+        <h2> JESUS CHRIST: THE ONLY PATHWAY TO HEAVEN.</h2>
+  </div>
+    </div>
+    <div class="proceed">
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >PROCEED</button>
+    </div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate"  method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/boy.jpeg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-body">
+            <form method="post" action="/home.html">
+
+      <label for="uname"><b>Email Address</b></label>
+      <input type="email" placeholder="Enter Username" name="user_email_address" id="username" class="form-control" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="user_password" id="password" class="form-control" required>
+        <div class="mb-3">
+      <button type="submit" class="btn btn-primary" value="/home.html">Login</button>
+    </div>
+  
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <p>Don't have an account yet?</p>
+    <button onclick="document.getElementById('register').style.display='block'" style="width:auto;" >Register</button>
+    <button onclick="document.getElementById('forgot').style.display='block'" style="width:auto;" >Forgot Password?</button>
+
+    
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </form>
+  </div>
+  </div>
+  </div>
